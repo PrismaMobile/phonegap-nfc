@@ -230,8 +230,8 @@
             [self closeSession:session withError:@"Error connecting to tag."];
             return;
         }
-        processNDEFTag
-        [self :session tag:tag];
+        
+        [self processNDEFTag:session tag:tag];
     }];
     
 }
